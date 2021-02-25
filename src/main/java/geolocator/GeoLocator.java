@@ -66,7 +66,7 @@ public class GeoLocator {
         String s = IOUtils.toString(url, "UTF-8");
         return OBJECT_MAPPER.readValue(s, GeoLocation.class);
     }
-    
+
     public static void main(String[] args) throws IOException {
         try {
             String arg = args.length > 0 ? args[0] : null;
